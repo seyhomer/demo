@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"adc1-demo\stm32f4xx_hal_gpio.o"
+"adc1-demo\stm32f4xx_hal_flash_ex.o"
+"adc1-demo\stm32f4xx_hal_tim.o"
+"adc1-demo\stm32f4xx_hal_pwr.o"
+"adc1-demo\stm32f4xx_hal_dma_ex.o"
+"adc1-demo\stm32f4xx_hal_dma.o"
+"adc1-demo\stm32f4xx_hal_cortex.o"
+"adc1-demo\stm32f4xx_hal_flash_ramfunc.o"
+"adc1-demo\stm32f4xx_hal_flash.o"
+"adc1-demo\stm32f4xx_hal_pwr_ex.o"
+"adc1-demo\stm32f4xx_hal_rcc_ex.o"
+"adc1-demo\stm32f4xx_hal.o"
+"adc1-demo\stm32f4xx_hal_rcc.o"
+"adc1-demo\stm32f4xx_hal_adc_ex.o"
+"adc1-demo\stm32f4xx_hal_adc.o"
+"adc1-demo\stm32f4xx_hal_tim_ex.o"
+"adc1-demo\startup_stm32f446xx.o"
+"adc1-demo\system_stm32f4xx.o"
+"adc1-demo\stm32f4xx_it.o"
+"adc1-demo\stm32f4xx_hal_msp.o"
+"adc1-demo\main.o"
+--library_type=microlib --strict --scatter "adc1-demo\adc1-demo.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "adc1-demo.map" -o adc1-demo\adc1-demo.axf
